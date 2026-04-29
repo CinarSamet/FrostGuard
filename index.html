@@ -8,6 +8,7 @@
 
 	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
 	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;700&family=Playfair+Display+SC:400;700&display=swap" rel="stylesheet">
+	<link rel="preload" as="image" href="images/a/main_image.webp">
 	<link href="css/mobilemenu.css" rel="stylesheet">
 	<link href="css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/simple-line-icons.css" rel="stylesheet">
@@ -660,9 +661,9 @@
 
 	<script data-main="js/script.js" src="js/lib/require.js"></script>
 	<script>
-		window.onload = function () {
+		document.addEventListener("DOMContentLoaded", () => {
 			document.body.style.visibility = "visible";
-		};
+		});
 
 		document.querySelector("form").addEventListener("submit", function (event) {
 			// 1. Sayfa yenilenmesini durdur
