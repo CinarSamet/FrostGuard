@@ -660,9 +660,9 @@
 
 	<script data-main="js/script.js" src="js/lib/require.js"></script>
 	<script>
-		document.addEventListener("DOMContentLoaded", function () {
+		window.onload = function () {
 			document.body.style.visibility = "visible";
-		});
+		};
 
 		document.querySelector("form").addEventListener("submit", function (event) {
 			// 1. Sayfa yenilenmesini durdur
